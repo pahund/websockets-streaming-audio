@@ -1,7 +1,6 @@
-
 // put global vars here
 
-var config = module.exports = {};
+var config = (module.exports = {});
 
 config.env = "dev";
 config.hostname = "dev.example.com";
@@ -13,6 +12,3 @@ config.media_dir = "../media";
 
 config.media_path_relative = "../media";
 config.media_path_absolute = "/home/stens/Dropbox/Documents/data/audio";
-
-// config.media_dir = "/home/stens/Videos/work";
-

@@ -1,25 +1,24 @@
+var streaming_audio_server = (function() {
+  "use strict";
 
-var streaming_audio_server = function() {
+  console.log(
+    require("../package.json").name,
+    require("../package.json").version
+  );
 
-"use strict";
+  var path = require("path");
 
-console.log(require('../package.json').name, require('../package.json').version);
+  var working_dir = path.join(__dirname, "/");
 
-var path = require('path');
+  var working_app = path.join(working_dir, "local_app");
 
-var working_dir = path.join(__dirname, "/");
+  console.log("working_app ", working_app);
 
-var working_app = path.join(working_dir, "local_app");
+  var app_obj = require(working_app);
 
-console.log("working_app ", working_app);
+  console.log("app_obj ", app_obj);
 
-var app_obj = require(working_app);
+  app_obj.launch_server(working_dir);
 
-console.log("app_obj ", app_obj);
-
-app_obj.launch_server(working_dir);
-
-// -----------------------------------------------------------------------  //
-
-}(); //  streaming_audio_server = function()
-
+  // -----------------------------------------------------------------------  //
+})(); //  streaming_audio_server = function()

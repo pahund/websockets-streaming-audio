@@ -1,39 +1,39 @@
 {
-    "name": "websockets-streaming-audio",
-    "version": "1.0.36",
-    "author": "Scott Stensland <scottstensland@gmail.com> (http://catfoodnation.com/)",
-    "bugs": {
-        "url": "https://github.com/scottstensland/websockets-streaming-audio/issues"
-    },
-    "dependencies": {
-        "ws": "0.4.x",
-        "express": "^4.4.5",
-		"audio-utils" : "1.0.x",
-		"shared-utils" : "0.1.8"
-    },
-    "description": "Click a browser button to launch a node.js process on the server side which streams audio using web sockets back to the browser which is then rendered using web audio API   My plan is to make this modular enough to get added to your process as simple API calls",
-    "engines": {
-        "node": "0.10.x"
-    },
-    "homepage": "https://github.com/scottstensland",
-    "keywords": [
-        "Node.js",
-        "websockets",
-        "webworkers",
-        "webaudio",
-        "audio",
-        "streaming"
-    ],
-    "license": "ISC",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/scottstensland/websockets-streaming-audio.git"
-    },
-    "scripts": {
-        "start_min": "node src_min/app.js",
-        "start_loki": "node src/app_loki.js",
-        "start": "node src/app.js",
-        "test": "make"
-    },
-    "subdomain": "websockets-streaming-audio"
+  "name": "websockets-streaming-audio",
+  "version": "1.0.36",
+  "author": "Scott Stensland <scottstensland@gmail.com> (http://catfoodnation.com/)",
+  "bugs": {
+    "url": "https://github.com/scottstensland/websockets-streaming-audio/issues"
+  },
+  "dependencies": {
+    "ws": "0.4.x",
+    "express": "^4.4.5",
+    "audio-utils": "1.0.x",
+    "shared-utils": "0.1.8"
+  },
+  "description": "Click a browser button to launch a node.js process on the server side which streams audio using web sockets back to the browser which is then rendered using web audio API   My plan is to make this modular enough to get added to your process as simple API calls",
+  "engines": {
+    "node": "0.10.x"
+  },
+  "homepage": "https://github.com/scottstensland",
+  "keywords": [
+    "Node.js",
+    "websockets",
+    "webworkers",
+    "webaudio",
+    "audio",
+    "streaming"
+  ],
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scottstensland/websockets-streaming-audio.git"
+  },
+  "scripts": {
+    "start_min": "node src_min/app.js",
+    "start_loki": "node src/app_loki.js",
+    "start": "node src/app.js",
+    "test": "make"
+  },
+  "subdomain": "websockets-streaming-audio"
 }
